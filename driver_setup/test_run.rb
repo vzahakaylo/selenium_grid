@@ -4,12 +4,13 @@ require 'rspec/expectations'
 include RSpec::Matchers
 
 def setup
+  hub_url = 'http://localhost:4444/wd/hub'
   caps = define_browsers("safari")
 #   caps[:platform] = :any
   @driver = Selenium::WebDriver.for(
     :remote,
-    url: 'http://localhost:4444/wd/hub',
-    desired_capabilities: caps) # you can also use :chrome, :safari, etc.
+    url: hub_url,
+    desired_capabilities: caps)
   @driver.manage.window.resize_to(2560, 1600)
 #   @driver.manage.timeouts.page_load = "10"
 end
