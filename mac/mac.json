@@ -3,16 +3,8 @@
   [
     {
       "browserName": "safari",
-      "maxInstances": 1,
-      "seleniumProtocol": "WebDriver"
-    },
-    {
-      "browserName": "firefox",
-      "maxInstances": 5,
-      "seleniumProtocol": "WebDriver"
-    },
-    {
-      "browserName": "chrome",
+      "technologyPreview": true,
+      "platform": "MAC",
       "maxInstances": 5,
       "seleniumProtocol": "WebDriver"
     }
